@@ -1080,7 +1080,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3604365042323285935, guid: 9e61a8607c2c4df4091567f4e483bfea, type: 3}
       propertyPath: m_SortingOrder
-      value: -5
+      value: -4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9e61a8607c2c4df4091567f4e483bfea, type: 3}
@@ -1177,6 +1177,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: "PorteBloqu\xE9e"
       objectReference: {fileID: 0}
+    - target: {fileID: 5748663738405651271, guid: bca63e217a8f274408d31875b0ddc473, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7065348423311507457, guid: bca63e217a8f274408d31875b0ddc473, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -1240,6 +1244,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1430446806}
     m_Modifications:
+    - target: {fileID: 6875707374500751959, guid: 363c95b952eba8c498322bc810dc175c, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7442840603636925579, guid: 363c95b952eba8c498322bc810dc175c, type: 3}
       propertyPath: m_Name
       value: "Fen\xEAtre"
@@ -1739,6 +1747,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3733782245613526190, guid: 8766587cc97c0854a8195bced2f96a72, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8305145186822500798, guid: 8766587cc97c0854a8195bced2f96a72, type: 3}
       propertyPath: m_Name
       value: PorteOuverte
@@ -1840,7 +1852,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3454529629255729468, guid: 2078fc5b18afec640b4be08534da0895, type: 3}
       propertyPath: m_SortingOrder
-      value: -5
+      value: -4
       objectReference: {fileID: 0}
     - target: {fileID: 7465762539270131955, guid: 2078fc5b18afec640b4be08534da0895, type: 3}
       propertyPath: m_RootOrder
@@ -2028,6 +2040,10 @@ PrefabInstance:
     - target: {fileID: 6925675440115104794, guid: 65d1cbfbf3fb6884cbea6d1ec6027c67, type: 3}
       propertyPath: m_Name
       value: PlatformBranche
+      objectReference: {fileID: 0}
+    - target: {fileID: 7573601601732174418, guid: 65d1cbfbf3fb6884cbea6d1ec6027c67, type: 3}
+      propertyPath: m_SortingOrder
+      value: -1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 65d1cbfbf3fb6884cbea6d1ec6027c67, type: 3}
@@ -3370,6 +3386,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2617803415261824224, guid: 38deecfe0892e6741aef8d13647ed6ff, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2617803415261824224, guid: 38deecfe0892e6741aef8d13647ed6ff, type: 3}
+      propertyPath: m_Color.g
+      value: 0.25157225
+      objectReference: {fileID: 0}
+    - target: {fileID: 2617803415261824224, guid: 38deecfe0892e6741aef8d13647ed6ff, type: 3}
+      propertyPath: m_Color.r
+      value: 0.98057765
+      objectReference: {fileID: 0}
     - target: {fileID: 2617803415261824224, guid: 38deecfe0892e6741aef8d13647ed6ff, type: 3}
       propertyPath: m_SortingOrder
       value: 2
