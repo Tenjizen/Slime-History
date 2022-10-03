@@ -11,6 +11,7 @@ public class Movement : MonoBehaviour
     [Header("Stats")]
     [SerializeField] float speed;
     [SerializeField] float jumpForce;
+    [SerializeField] float wallJumpForce;
     [SerializeField] float slideSpeed;
     [SerializeField] float wallJumpLerp;
     public float fallMultiplier = 3f;
@@ -33,6 +34,7 @@ public class Movement : MonoBehaviour
         coll = GetComponent<Collision>();
         rb2D = GetComponent<Rigidbody2D>();
     }
+
     // Update is called once per frame
     void Update()
     {
@@ -49,9 +51,9 @@ public class Movement : MonoBehaviour
             //anim.SetTrigger("jump");
 
             if (coll.onGround)
-                Jump(Vector2.up/*, false*/);
-            //if (coll.onWall && !coll.onGround)
-            //    WallJump();
+                Jump(Vector2.up, false);
+            if (coll.onWall && !coll.onGround)
+                WallJump();
         }
 
         if (rb2D.velocity.y < 0)
@@ -95,6 +97,7 @@ public class Movement : MonoBehaviour
             if (x != 0 && !wallGrab)
             {
                 wallSlide = true;
+                wallSlide = true;
                 //StartCoroutine(timerCoroutine);
                 WallSlide();
             }
@@ -103,17 +106,52 @@ public class Movement : MonoBehaviour
         if (!coll.onWall || coll.onGround)
         {
             wallSlide = false;
+            //wallJumped = false;
             //StopCoroutine(timerCoroutine);
         }
         #endregion
         if (wallGrab || wallSlide || !canMove)
             return;
+
+
+        if (coll.onGround && !groundTouch)
+        {
+            groundTouch = true;
+        }
+
+        if (!coll.onGround && groundTouch)
+        {
+            groundTouch = false;
+        }
     }
 
     IEnumerator timerWallSlide(float time)
     {
         yield return new WaitForSeconds(time);
         WallSlide();
+    }
+    private void WallJump()
+    {
+        if ((side == 1 && coll.onRightWall) || side == -1 && !coll.onRightWall)
+        {
+            side *= -1;
+            //anim.Flip(side);
+        }
+
+        StopCoroutine(DisableMovement(0));
+        StartCoroutine(DisableMovement(.2f));
+
+        Vector2 wallDir = coll.onRightWall ? Vector2.left : Vector2.right;
+
+        Jump((Vector2.up / wallJumpForce + wallDir / wallJumpForce), true);
+
+        wallJumped = true;
+    }
+    IEnumerator DisableMovement(float time)
+    {
+        canMove = false;
+        yield return new WaitForSeconds(time);
+        canMove = true;
     }
     void Walk(Vector2 dir)
     {
@@ -145,7 +183,7 @@ public class Movement : MonoBehaviour
         rb2D.velocity = new Vector2(push, -slideSpeed);
     }
 
-    private void Jump(Vector2 dir/*, bool wall*/)
+    private void Jump(Vector2 dir, bool wall)
     {
         //slideParticle.transform.parent.localScale = new Vector3(ParticleSide(), 1, 1);
         //ParticleSystem particle = wall ? wallJumpParticle : jumpParticle;
