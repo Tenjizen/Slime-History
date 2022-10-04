@@ -17,12 +17,15 @@ public class PlayerController : MonoBehaviour
     private bool isGrounded;
     private float timeSinceGrounded;
     private Collider2D[] colliderGround = new Collider2D[1];
-    
+
     [Space]
     [Header("Jump")]
     [SerializeField] float jumpForce;
+    [SerializeField] [Tooltip("SUR LE COTÉ")] float wallJumpForce;
+    [SerializeField] [Tooltip("VERS LE HAUT")] float wallJumpUpForce;
     [SerializeField] float timeMinBetweenJump;
     [SerializeField] float velocityFallMin;
+    //[SerializeField] float velocitySlide;
     [SerializeField] [Tooltip("Gravity otherwise")] float gravity;
     [SerializeField] [Tooltip("Gravity when the player goes up and press jump")] float gravityUpJump;
     [SerializeField] float jumpInputTimer = 0.1f;
@@ -34,23 +37,25 @@ public class PlayerController : MonoBehaviour
     [Space]
     [Header("Slope")]
     [SerializeField] PhysicsMaterial2D physicsFriction;
+    //[SerializeField] PhysicsMaterial2D wallFriction;
     [SerializeField] PhysicsMaterial2D physicsNoFriction;
     [SerializeField] float slopeDetectOffset;
     private bool isOnSlope;
-    
+
     [Space]
-    [Header("Corner")]
+    [Header("Corner (in progress)")]
     [SerializeField] Vector2 offsetToReplace;
     [SerializeField] Vector2 offsetCollisionBox;
     private float[] directions = new float[] { -1, 1 };
     [SerializeField] Vector2 collisionBox;
-    
+
     private Rigidbody2D rb;
     private Vector2 inputs;
     private CapsuleCollider2D cc2D;
     private RaycastHit2D[] hitResults = new RaycastHit2D[1];
-
+    private Collision coll;
     //private Vector2 collisionBox;
+    private bool wallGrab;
 
 
     // Start is called before the first frame update
@@ -58,6 +63,7 @@ public class PlayerController : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         cc2D = GetComponent<CapsuleCollider2D>();
+        coll = GetComponent<Collision>();
     }
 
     // Update is called once per frame
@@ -74,6 +80,8 @@ public class PlayerController : MonoBehaviour
         HandleMovements();
         HandleJump();
         HandleSlope();
+        HandleWall();
+        HandleGrabWall();
     }
     void HandleInputs()
     {
@@ -84,6 +92,11 @@ public class PlayerController : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space))
             timeSinceJumpPressed = 0;
+
+        if (coll.onWall && Input.GetButton("Fire3"))
+            wallGrab = true;
+        if (Input.GetButtonUp("Fire3") || !coll.onWall)
+            wallGrab = false;
     }
     void HandleMovements()
     {
@@ -91,17 +104,56 @@ public class PlayerController : MonoBehaviour
         Vector2 wantVelocity = new Vector2(inputs.x * walkspeed, velocity.y);
         rb.velocity = Vector2.MoveTowards(velocity, wantVelocity, acceleration * Time.deltaTime);
     }
+    void HandleWall()
+    {
+        if (!isGrounded && coll.onWall && rb.velocity.y <= coll.wallSide && !wallGrab)
+        {
+            if (coll.onLeftWall)
+                rb.velocity = new Vector2(rb.velocity.x, -coll.wallSide);
+            else if (coll.onRightWall)
+                rb.velocity = new Vector2(rb.velocity.x, coll.wallSide);
+        }
+    }
+    void HandleGrabWall()
+    {
+        if (wallGrab)
+        {
+            rb.gravityScale = 0;
+            rb.velocity = new Vector2(rb.velocity.x, 0);
+        }
+        else
+        {
+            rb.gravityScale = 1;
+        }
+
+
+    }
     void HandleJump()
     {
         timerNoJump -= Time.deltaTime;
         if (inputJump && (rb.velocity.y <= 0 || isOnSlope) && (isGrounded || timeSinceGrounded < coyoteTime) && timerNoJump <= 0 && timeSinceJumpPressed < jumpInputTimer)
         {
+            //print(rb.velocity.y + "avant");
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
             timerNoJump = timeMinBetweenJump;
+            //print(rb.velocity.y + "apres");
+        }
+        else if (inputJump && coll.onWall && !isGrounded && rb.velocity.y <= 0)
+        {
+            //print(rb.velocity.y+"avant");
+            wallGrab = false;
+
+            if (coll.onLeftWall)
+                rb.velocity = new Vector2(rb.velocity.x + wallJumpForce, wallJumpUpForce);
+            //WallJump();
+            else if (coll.onRightWall)
+                rb.velocity = new Vector2(rb.velocity.x - wallJumpForce, wallJumpUpForce);
+            //print(rb.velocity.y+"apres");
         }
 
         if (!isGrounded)
         {
+            //print("jump");
             if (rb.velocity.y < 0)
                 rb.gravityScale = gravity;
             else
@@ -140,6 +192,8 @@ public class PlayerController : MonoBehaviour
 
         if (Mathf.Abs(inputs.x) < 0.1f && (slopeLeft || slopeRight))
             cc2D.sharedMaterial = physicsFriction;
+        //else if (coll.onWall && !isGrounded && rb.velocity.y <= 0)
+        //    cc2D.sharedMaterial = physicsFriction;
         else
             cc2D.sharedMaterial = physicsNoFriction;
     }
