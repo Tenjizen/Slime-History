@@ -19,6 +19,7 @@ public class DropsCreator : MonoBehaviour
     {
         Instantiate(drop);
 
+
         yield return new WaitForSeconds(createSpeed);
         StartCoroutine(DropCreator());
     }
