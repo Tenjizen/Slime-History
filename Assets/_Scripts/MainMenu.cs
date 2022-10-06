@@ -15,6 +15,11 @@ public class MainMenu : MonoBehaviour
 
     }
 
+    public void Credits()
+    {
+
+    }
+
     public void ExitGame()
     {
 #if UNITY_EDITOR
