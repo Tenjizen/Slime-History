@@ -11,14 +11,11 @@ public class CodePanel : MonoBehaviour
     [Header("Mettre le code à trouver ici")]
     [SerializeField] string code;
 
-    private void Update()
-    {
+    [Header("Porte à ouvrir")]
+    [SerializeField] GameObject door;
 
-        if (codeTextValue == code)
-        {
-            //DoorOpen
-        }
-    }
+    [Header("Trigger du Panel")]
+    [SerializeField] GameObject triggerActive;
 
     public void AddDigit(string digit)
     {
@@ -27,7 +24,9 @@ public class CodePanel : MonoBehaviour
 
         if (codeTextValue == code)
         {
-            //Door open
+            door.SetActive(false);
+            triggerActive.gameObject.SetActive(false);
+            gameObject.SetActive(false);
         }  
 
         else if (codeTextValue.Length >= 4)
