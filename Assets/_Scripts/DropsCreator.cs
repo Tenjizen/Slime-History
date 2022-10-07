@@ -17,7 +17,7 @@ public class DropsCreator : MonoBehaviour
     
     IEnumerator DropCreator()
     {
-        Instantiate(drop);
+        Instantiate(drop, gameObject.transform.position, Quaternion.identity);
 
 
         yield return new WaitForSeconds(createSpeed);
