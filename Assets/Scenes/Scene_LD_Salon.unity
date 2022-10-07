@@ -3036,7 +3036,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 716314131, guid: 38deecfe0892e6741aef8d13647ed6ff, type: 3}
       propertyPath: velocityFallMin
-      value: -10
+      value: -15
       objectReference: {fileID: 0}
     - target: {fileID: 716314131, guid: 38deecfe0892e6741aef8d13647ed6ff, type: 3}
       propertyPath: wallJumpUpForce
@@ -3056,11 +3056,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3222646792672664982, guid: 38deecfe0892e6741aef8d13647ed6ff, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -21
+      value: -20.7
       objectReference: {fileID: 0}
     - target: {fileID: 3222646792672664982, guid: 38deecfe0892e6741aef8d13647ed6ff, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -6.6
+      value: -6.7
       objectReference: {fileID: 0}
     - target: {fileID: 3222646792672664982, guid: 38deecfe0892e6741aef8d13647ed6ff, type: 3}
       propertyPath: m_LocalPosition.z
