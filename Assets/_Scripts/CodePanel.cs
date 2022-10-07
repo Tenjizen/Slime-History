@@ -15,7 +15,7 @@ public class CodePanel : MonoBehaviour
     [SerializeField] GameObject door;
 
     [Header("Trigger du Panel")]
-    [SerializeField] CodePanelAppear triggerActive;
+    [SerializeField] GameObject triggerActive;
 
     public void AddDigit(string digit)
     {
