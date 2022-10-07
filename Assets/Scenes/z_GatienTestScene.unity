@@ -260,13 +260,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 46181167}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.1, y: -2.13, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.01, y: -1.88, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &63612432
 GameObject:
@@ -315,6 +315,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cuveDown: {fileID: 1325948447}
   cuveUp: {fileID: 245015136}
+  okCuves: {fileID: 1446692651}
 --- !u!58 &63612435
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -613,13 +614,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 245015136}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.1, y: -2.13, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -3.5800002, y: -1.88, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &287313466
 PrefabInstance:
@@ -729,6 +730,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cuveDown: {fileID: 245015136}
   cuveUp: {fileID: 46181167}
+  okCuves: {fileID: 1446692651}
 --- !u!58 &308402133
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -853,6 +855,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cuveDown: {fileID: 46181167}
   cuveUp: {fileID: 1325948447}
+  okCuves: {fileID: 1446692651}
 --- !u!58 &860605945
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1006,13 +1009,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1325948447}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.9, y: -2.13, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 3.6399999, y: -1.88, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1446692648
 GameObject:
@@ -1024,6 +1027,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1446692650}
   - component: {fileID: 1446692649}
+  - component: {fileID: 1446692651}
   m_Layer: 0
   m_Name: Boutoncuve
   m_TagString: Untagged
@@ -1091,16 +1095,34 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1446692648}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.88, y: -2.74, z: 0}
-  m_LocalScale: {x: 0.5646741, y: 0.5646741, z: 0.5646741}
+  m_LocalPosition: {x: -0.13000011, y: -2.41, z: 0}
+  m_LocalScale: {x: 0.5006, y: 0.5006, z: 0.5006}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 308402131}
   - {fileID: 63612433}
   - {fileID: 860605943}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1446692651
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1446692648}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fbced855460acc4483e36ce69c9a081, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RedCuve: {fileID: 1325948447}
+  BlueCuve: {fileID: 245015136}
+  YellowCuve: {fileID: 46181167}
+  button1: {fileID: 308402130}
+  button2: {fileID: 63612432}
+  button3: {fileID: 860605942}
 --- !u!1001 &1475721351
 PrefabInstance:
   m_ObjectHideFlags: 0

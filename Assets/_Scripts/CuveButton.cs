@@ -10,6 +10,9 @@ public class CuveButton : MonoBehaviour
     [Header("Cuve +0.5f")]
     [SerializeField] GameObject cuveUp;
 
+    [Header("Verification des cuves")]
+    [SerializeField] CuvesIsOk okCuves;
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (cuveDown.transform.localScale.y <= 0f)
@@ -29,5 +32,7 @@ public class CuveButton : MonoBehaviour
         {
             cuveUp.transform.localScale += new Vector3(0f, 0.5f, 0f);
         }
+
+        okCuves.CuveDone();
     }
 }
