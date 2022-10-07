@@ -6,9 +6,9 @@ using UnityEngine.SceneManagement;
 public class MainMenu : MonoBehaviour
 {
 
-    public GameObject mainMenu;
-    public GameObject credits;
-    public GameObject settings;
+    [SerializeField] GameObject mainMenu;
+    [SerializeField] GameObject credits;
+    [SerializeField] GameObject settings;
 
     private void Start()
     {

@@ -2,6 +2,8 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
@@ -59,6 +61,10 @@ public class PlayerController : MonoBehaviour
 
     //Checkpoint
     public static Vector2 lastCheckpoint;
+
+    //Life
+    private int life = 3;
+    [SerializeField] Image[] lifeHearts;
 
     // Start is called before the first frame update
     void Start()
@@ -233,6 +239,40 @@ public class PlayerController : MonoBehaviour
 
     public void Die()
     {
-        gameObject.transform.position = lastCheckpoint;
+        life--;
+        if (life <= 0)
+        {
+            Scene scene = SceneManager.GetActiveScene(); 
+            SceneManager.LoadScene(scene.name);
+        }
+        else
+        {
+            gameObject.transform.position = lastCheckpoint;
+        }
+        
+        if (life == 3)
+        {
+            lifeHearts[0].gameObject.SetActive(true);
+            lifeHearts[1].gameObject.SetActive(true);
+            lifeHearts[2].gameObject.SetActive(true);
+        }
+        else if (life == 2)
+        {
+            lifeHearts[0].gameObject.SetActive(true);
+            lifeHearts[1].gameObject.SetActive(true);
+            lifeHearts[2].gameObject.SetActive(false);
+        }
+        else if (life == 1)
+        {
+            lifeHearts[0].gameObject.SetActive(true);
+            lifeHearts[1].gameObject.SetActive(false);
+            lifeHearts[2].gameObject.SetActive(false);
+        }
+        else if (life == 0)
+        {
+            lifeHearts[0].gameObject.SetActive(false);
+            lifeHearts[1].gameObject.SetActive(false);
+            lifeHearts[2].gameObject.SetActive(false);
+        }
     }
 }
