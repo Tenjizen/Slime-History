@@ -11,6 +11,9 @@ public class CodePanel : MonoBehaviour
     [Header("Mettre le code à trouver ici")]
     [SerializeField] string code;
 
+    [Header("Porte à ouvrir")]
+    [SerializeField] GameObject door;
+
     private void Update()
     {
 
@@ -27,7 +30,7 @@ public class CodePanel : MonoBehaviour
 
         if (codeTextValue == code)
         {
-            //Door open
+            door.SetActive(false);
         }  
 
         else if (codeTextValue.Length >= 4)
