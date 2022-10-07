@@ -1,11 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PickItem : MonoBehaviour
 {
     [SerializeField] int NumberObject;
-    [SerializeField] string TagNote;
+    //[SerializeField] string TagNote;
     [SerializeField] string TagIngredient;
     [SerializeField] GameObject note;
     private bool triggerPlayer;
@@ -14,10 +15,14 @@ public class PickItem : MonoBehaviour
     {
         if (triggerPlayer && Input.GetKeyDown(KeyCode.E))
         {
-            if (this.tag == TagNote)
-                InventoryVisual.Instance.Notes[NumberObject].SetActive(true);
+            if (this.tag == "Note")
+            {
+                InventoryVisual.Instance.Notes.SetActive(true);
+            }
             else if (this.tag == TagIngredient)
-                InventoryVisual.Instance.Ingredients[NumberObject].SetActive(true);
+                InventoryVisual.Instance.Ingredients[NumberObject].transform.GetComponent<Image>().color = Color.white;
+
+
             Destroy(note);
         }
 

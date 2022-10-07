@@ -5,7 +5,7 @@ using UnityEngine;
 public class InventoryVisual : MonoBehaviour
 {
     [SerializeField] GameObject Inventory;
-    public List<GameObject> Notes;
+    public GameObject Notes;
     public List<GameObject> Ingredients;
     private PauseMenu pauseMenu;
 
@@ -20,14 +20,12 @@ public class InventoryVisual : MonoBehaviour
     void Start()
     {
         pauseMenu = GetComponent<PauseMenu>();
-        foreach (var item in Ingredients)
-        {
-            item.SetActive(false);
-        }
-        foreach (var note in Notes)
-        {
-            note.SetActive(false);
-        }
+        //foreach (var item in Ingredients)
+        //{
+        //    item.SetActive(false);
+        //}
+        
+            Notes.SetActive(false);
     }
 
     // Update is called once per frame
