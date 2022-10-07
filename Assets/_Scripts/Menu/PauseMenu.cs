@@ -5,11 +5,12 @@ using UnityEngine;
 public class PauseMenu : MonoBehaviour
 {
     public static bool gameIsPaused = false;
-
     [SerializeField] GameObject pauseMenu;
     [SerializeField] GameObject credits;
     [SerializeField] GameObject settings;
     //[SerializeField] GameObject pauseMenu;
+
+    public bool GameIsPaused => gameIsPaused;
 
     void Update()
     {
@@ -21,20 +22,24 @@ public class PauseMenu : MonoBehaviour
             {
                 gameIsPaused = !gameIsPaused;
                 PauseGame();
+                pauseMenu.SetActive(!pauseMenu.activeSelf);
             }
         }
+    }
+    public void SetGamePause()
+    {
+        gameIsPaused = !gameIsPaused;
     }
     public void PauseGame()
     {
         if (gameIsPaused)
         {
             Time.timeScale = 0f;
-            pauseMenu.SetActive(true);
         }
         else
         {
             Time.timeScale = 1;
-            pauseMenu.SetActive(false);
+            //pauseMenu.SetActive(false);
         }
     }
     public void Resume()
