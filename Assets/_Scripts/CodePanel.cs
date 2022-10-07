@@ -14,14 +14,8 @@ public class CodePanel : MonoBehaviour
     [Header("Porte à ouvrir")]
     [SerializeField] GameObject door;
 
-    private void Update()
-    {
-
-        if (codeTextValue == code)
-        {
-            //DoorOpen
-        }
-    }
+    [Header("Trigger du Panel")]
+    [SerializeField] CodePanelAppear triggerActive;
 
     public void AddDigit(string digit)
     {
@@ -31,6 +25,8 @@ public class CodePanel : MonoBehaviour
         if (codeTextValue == code)
         {
             door.SetActive(false);
+            triggerActive.gameObject.SetActive(false);
+            gameObject.SetActive(false);
         }  
 
         else if (codeTextValue.Length >= 4)
