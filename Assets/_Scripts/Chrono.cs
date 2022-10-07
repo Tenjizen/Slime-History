@@ -9,10 +9,13 @@ public class Chrono : MonoBehaviour
     [SerializeField] int startTime;
     private float chronoTime;
 
+    private PlayerController pc;
+
     public TextMeshProUGUI chronoTxt;
 
     void Start()
     {
+        pc = FindObjectOfType<PlayerController>();
         chronoTime = startTime;
         DisplayTime(chronoTime, chronoTxt);
         StartCoroutine(countSeconds());
@@ -47,5 +50,15 @@ public class Chrono : MonoBehaviour
         float seconds = Mathf.FloorToInt(timeToDisplay % 60);
 
         display.text = string.Format("{0:00}:{1:00}", minutes, seconds);
+    }
+
+    private void Update()
+    {
+        if (chronoTime <= 0)
+        {
+            pc.Die();
+            chronoTime = startTime;
+            StartCoroutine(countSeconds());
+        }
     }
 }
