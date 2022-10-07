@@ -66,6 +66,7 @@ public class PlayerController : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         cc2D = GetComponent<CapsuleCollider2D>();
         coll = GetComponent<Collision>();
+        lastCheckpoint = transform.position;
     }
 
     // Update is called once per frame
@@ -232,6 +233,6 @@ public class PlayerController : MonoBehaviour
 
     public void Die()
     {
-
+        gameObject.transform.position = lastCheckpoint;
     }
 }
