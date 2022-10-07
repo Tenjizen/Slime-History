@@ -13,6 +13,9 @@ public class Liquid : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        pc.Die();
+        if (collision.CompareTag("Player"))
+        {
+            pc.Die();
+        }       
     }
 }
