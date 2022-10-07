@@ -57,6 +57,8 @@ public class PlayerController : MonoBehaviour
     //private Vector2 collisionBox;
     private bool wallGrab;
 
+    //Checkpoint
+    public static Vector2 lastCheckpoint;
 
     // Start is called before the first frame update
     void Start()
