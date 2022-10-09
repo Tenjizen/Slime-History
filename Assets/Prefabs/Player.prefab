@@ -97,6 +97,7 @@ GameObject:
   - component: {fileID: 999159325952448936}
   - component: {fileID: 2205692078282968084}
   - component: {fileID: 716314131}
+  - component: {fileID: 6211769281531636984}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -217,6 +218,26 @@ MonoBehaviour:
   offsetCollisionBox: {x: 0, y: 0}
   collisionBox: {x: 0, y: 0}
   lifeHearts: []
+--- !u!95 &6211769281531636984
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3222646792672664986}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 7be08a6153368594f9c63b9ed482b5ff, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &5884847763278124870
 GameObject:
   m_ObjectHideFlags: 0
