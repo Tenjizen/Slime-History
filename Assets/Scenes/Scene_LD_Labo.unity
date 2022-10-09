@@ -504,7 +504,7 @@ GameObject:
   - component: {fileID: 714089682}
   - component: {fileID: 714089680}
   - component: {fileID: 714089681}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Moving_Platform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -799,7 +799,7 @@ GameObject:
   - component: {fileID: 775919551}
   - component: {fileID: 775919550}
   - component: {fileID: 775919552}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Sol Plafond
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3372,7 +3372,7 @@ GameObject:
   - component: {fileID: 1425359077}
   - component: {fileID: 1425359076}
   - component: {fileID: 1425359078}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Mur Labo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3671,7 +3671,7 @@ GameObject:
   - component: {fileID: 1691818158}
   - component: {fileID: 1691818157}
   - component: {fileID: 1691818159}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Plateforme
   m_TagString: Untagged
   m_Icon: {fileID: 0}
