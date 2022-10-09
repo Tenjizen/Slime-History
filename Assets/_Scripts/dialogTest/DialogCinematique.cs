@@ -15,6 +15,7 @@ public class DialogCinematique : MonoBehaviour
 
     //for GP
     [SerializeField] TextMeshProUGUI text;
+    [SerializeField] GameObject textPanel;
     private int _currentLine = 0;
     private int _currentCine = 0;
     private void Update()
@@ -53,8 +54,8 @@ public class DialogCinematique : MonoBehaviour
                 {
                     _currentCine++;
                     _currentLine=0;
-                    //fin de ciné faut desactiver le gameobject canvas du text (a mettre a chaque else if evidemment vu comment c'est bien dégueulasse c: )
-                    //apres faut juste réactiver le gameobjcet a chaque cinématique avec des triggers (check y a tout sur didi)
+                    gameObject.SetActive(false);
+                    textPanel.SetActive(false);
                 }
                 else
                     _currentLine++;
@@ -65,6 +66,8 @@ public class DialogCinematique : MonoBehaviour
                 {
                     _currentCine++;
                     _currentLine = 0;
+                    gameObject.SetActive(false);
+                    textPanel.SetActive(false);
                 }
                 else
                     _currentLine++;
@@ -75,6 +78,8 @@ public class DialogCinematique : MonoBehaviour
                 {
                     _currentCine++;
                     _currentLine = 0;
+                    gameObject.SetActive(false);
+                    textPanel.SetActive(false);
                 }
                 else
                     _currentLine++;
@@ -85,6 +90,8 @@ public class DialogCinematique : MonoBehaviour
                 {
                     _currentCine++;
                     _currentLine = 0;
+                    gameObject.SetActive(false);
+                    textPanel.SetActive(false);
                 }
                 else
                     _currentLine++;
@@ -95,6 +102,8 @@ public class DialogCinematique : MonoBehaviour
                 {
                     _currentCine++;
                     _currentLine = 0;
+                    gameObject.SetActive(false);
+                    textPanel.SetActive(false);
                 }
                 else
                     _currentLine++;
@@ -105,6 +114,8 @@ public class DialogCinematique : MonoBehaviour
                 {
                     _currentCine++;
                     _currentLine = 0;
+                    gameObject.SetActive(false);
+                    textPanel.SetActive(false);
                 }
                 else
                     _currentLine++;
