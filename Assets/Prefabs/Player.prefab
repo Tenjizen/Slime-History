@@ -201,8 +201,9 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 64
-  jumpForce: 5
+  jumpForce: 7
   wallJumpForce: 10
+  wallJumpUpForce: 0
   timeMinBetweenJump: 0.5
   velocityFallMin: -5
   gravity: 1
@@ -215,6 +216,7 @@ MonoBehaviour:
   offsetToReplace: {x: 0, y: 0}
   offsetCollisionBox: {x: 0, y: 0}
   collisionBox: {x: 0, y: 0}
+  lifeHearts: []
 --- !u!1 &5884847763278124870
 GameObject:
   m_ObjectHideFlags: 0
