@@ -123,6 +123,119 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1001 &22222369
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 7717032797276830544, guid: 0d62f48713db69f4790a6ee87e6f2248, type: 3}
+      propertyPath: m_Name
+      value: CanvasDialog
+      objectReference: {fileID: 0}
+    - target: {fileID: 7717032797276830547, guid: 0d62f48713db69f4790a6ee87e6f2248, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7717032797276830547, guid: 0d62f48713db69f4790a6ee87e6f2248, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7717032797276830547, guid: 0d62f48713db69f4790a6ee87e6f2248, type: 3}
+      propertyPath: m_RootOrder
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 7717032797276830547, guid: 0d62f48713db69f4790a6ee87e6f2248, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7717032797276830547, guid: 0d62f48713db69f4790a6ee87e6f2248, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7717032797276830547, guid: 0d62f48713db69f4790a6ee87e6f2248, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7717032797276830547, guid: 0d62f48713db69f4790a6ee87e6f2248, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7717032797276830547, guid: 0d62f48713db69f4790a6ee87e6f2248, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7717032797276830547, guid: 0d62f48713db69f4790a6ee87e6f2248, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7717032797276830547, guid: 0d62f48713db69f4790a6ee87e6f2248, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7717032797276830547, guid: 0d62f48713db69f4790a6ee87e6f2248, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7717032797276830547, guid: 0d62f48713db69f4790a6ee87e6f2248, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7717032797276830547, guid: 0d62f48713db69f4790a6ee87e6f2248, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7717032797276830547, guid: 0d62f48713db69f4790a6ee87e6f2248, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7717032797276830547, guid: 0d62f48713db69f4790a6ee87e6f2248, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7717032797276830547, guid: 0d62f48713db69f4790a6ee87e6f2248, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7717032797276830547, guid: 0d62f48713db69f4790a6ee87e6f2248, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7717032797276830547, guid: 0d62f48713db69f4790a6ee87e6f2248, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7717032797276830547, guid: 0d62f48713db69f4790a6ee87e6f2248, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7717032797276830547, guid: 0d62f48713db69f4790a6ee87e6f2248, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7717032797276830547, guid: 0d62f48713db69f4790a6ee87e6f2248, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0d62f48713db69f4790a6ee87e6f2248, type: 3}
+--- !u!1 &22222370 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7717032796268117830, guid: 0d62f48713db69f4790a6ee87e6f2248, type: 3}
+  m_PrefabInstance: {fileID: 22222369}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &22222371 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7717032796545792027, guid: 0d62f48713db69f4790a6ee87e6f2248, type: 3}
+  m_PrefabInstance: {fileID: 22222369}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &124186261
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4168,6 +4281,187 @@ TilemapCollider2D:
   m_Offset: {x: 0, y: 0}
   m_MaximumTileChangeCount: 1000
   m_ExtrusionFactor: 0.00001
+--- !u!1001 &1834433231
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4376489920584273057, guid: 08c784a6098196a4e8fbeb29f586db71, type: 3}
+      propertyPath: m_Name
+      value: DialogSystem
+      objectReference: {fileID: 0}
+    - target: {fileID: 4376489920584273062, guid: 08c784a6098196a4e8fbeb29f586db71, type: 3}
+      propertyPath: text
+      value: 
+      objectReference: {fileID: 22222371}
+    - target: {fileID: 4376489920584273062, guid: 08c784a6098196a4e8fbeb29f586db71, type: 3}
+      propertyPath: textPanel
+      value: 
+      objectReference: {fileID: 22222370}
+    - target: {fileID: 4376489920584273062, guid: 08c784a6098196a4e8fbeb29f586db71, type: 3}
+      propertyPath: _information._dialog.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4376489920584273062, guid: 08c784a6098196a4e8fbeb29f586db71, type: 3}
+      propertyPath: _information2._dialog.Array.size
+      value: 23
+      objectReference: {fileID: 0}
+    - target: {fileID: 4376489920584273062, guid: 08c784a6098196a4e8fbeb29f586db71, type: 3}
+      propertyPath: _information._dialog.Array.data[0]
+      value: "SLIME\nBien! C'est le moments o\xF9 les NOTES DE RECHERCHES vont \xEAtre
+        le plus utile."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4376489920584273062, guid: 08c784a6098196a4e8fbeb29f586db71, type: 3}
+      propertyPath: _information2._dialog.Array.data[0]
+      value: "SLIME\r :\nJ'ai r\xE9ussi ! J'ai r\xE9ussi comme p\xE8re !"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4376489920584273062, guid: 08c784a6098196a4e8fbeb29f586db71, type: 3}
+      propertyPath: _information2._dialog.Array.data[1]
+      value: "FRANCK :\nAh bon ? Une anomalie comme toi a r\xE9ussi \xE0 recopier
+        mon g\xE9nie ? "
+      objectReference: {fileID: 0}
+    - target: {fileID: 4376489920584273062, guid: 08c784a6098196a4e8fbeb29f586db71, type: 3}
+      propertyPath: _information2._dialog.Array.data[2]
+      value: "FRANCK : \nIl manquerai plus que... \xC7a..."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4376489920584273062, guid: 08c784a6098196a4e8fbeb29f586db71, type: 3}
+      propertyPath: _information2._dialog.Array.data[3]
+      value: "FRANCK : \nQu'est-ce que..."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4376489920584273062, guid: 08c784a6098196a4e8fbeb29f586db71, type: 3}
+      propertyPath: _information2._dialog.Array.data[4]
+      value: "FRANCK : \nTu as r\xE9ellement r\xE9ussi ?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4376489920584273062, guid: 08c784a6098196a4e8fbeb29f586db71, type: 3}
+      propertyPath: _information2._dialog.Array.data[5]
+      value: "FRANCK :\nTu es peut-\xEAtre r\xE9ellement mon fils finalement."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4376489920584273062, guid: 08c784a6098196a4e8fbeb29f586db71, type: 3}
+      propertyPath: _information2._dialog.Array.data[6]
+      value: 'FRANCK :
+
+        Si tu le souhaite je pourrais t''apprendre comment
+        l''utiliser et  exploiter ton plein potentiel ?'
+      objectReference: {fileID: 0}
+    - target: {fileID: 4376489920584273062, guid: 08c784a6098196a4e8fbeb29f586db71, type: 3}
+      propertyPath: _information2._dialog.Array.data[7]
+      value: 'FRANCK :
+
+        Qu''en penses-tu ... Mon fils !'
+      objectReference: {fileID: 0}
+    - target: {fileID: 4376489920584273062, guid: 08c784a6098196a4e8fbeb29f586db71, type: 3}
+      propertyPath: _information2._dialog.Array.data[8]
+      value: "SLIME\r\nD\xE9sol\xE9 mais je m'en vais avec mon ami nouvellement n\xE9."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4376489920584273062, guid: 08c784a6098196a4e8fbeb29f586db71, type: 3}
+      propertyPath: _information2._dialog.Array.data[9]
+      value: 'FRANCK :
+
+        Mais...'
+      objectReference: {fileID: 0}
+    - target: {fileID: 4376489920584273062, guid: 08c784a6098196a4e8fbeb29f586db71, type: 3}
+      propertyPath: _information2._dialog.Array.data[10]
+      value: "FRANCK : \nTu ne peux pas partir, tu as r\xE9ussi l'exp\xE9rience!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4376489920584273062, guid: 08c784a6098196a4e8fbeb29f586db71, type: 3}
+      propertyPath: _information2._dialog.Array.data[11]
+      value: "SLIME\r\nVous devriez \xEAtre heureux, l'anomalie s'en va comme vous
+        l'avez toujours souhait\xE9."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4376489920584273062, guid: 08c784a6098196a4e8fbeb29f586db71, type: 3}
+      propertyPath: _information2._dialog.Array.data[12]
+      value: 'FRANCK :
+
+        Tu n''es pas une anomalie, tu es mon fils !'
+      objectReference: {fileID: 0}
+    - target: {fileID: 4376489920584273062, guid: 08c784a6098196a4e8fbeb29f586db71, type: 3}
+      propertyPath: _information2._dialog.Array.data[13]
+      value: "SLIME\r :\nEt je l'ai toujours \xE9t\xE9 !"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4376489920584273062, guid: 08c784a6098196a4e8fbeb29f586db71, type: 3}
+      propertyPath: _information2._dialog.Array.data[14]
+      value: "SLIME :\nMalheureusement tu t'en rends compte trop tard p\xE8re."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4376489920584273062, guid: 08c784a6098196a4e8fbeb29f586db71, type: 3}
+      propertyPath: _information2._dialog.Array.data[15]
+      value: "SLIME : \nJ'ai maintenant un ami et n'ai plus besoin de toi."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4376489920584273062, guid: 08c784a6098196a4e8fbeb29f586db71, type: 3}
+      propertyPath: _information2._dialog.Array.data[16]
+      value: "FRANCK :\nTu oses m'abandonner alors que je t'ai cr\xE9\xE9 ?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4376489920584273062, guid: 08c784a6098196a4e8fbeb29f586db71, type: 3}
+      propertyPath: _information2._dialog.Array.data[17]
+      value: "SLIME\r :\nTu m'as cr\xE9\xE9 puis tu m'as rejet\xE9, alors je pars."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4376489920584273062, guid: 08c784a6098196a4e8fbeb29f586db71, type: 3}
+      propertyPath: _information2._dialog.Array.data[18]
+      value: "SLIME :\nAu revoir p\xE8re."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4376489920584273062, guid: 08c784a6098196a4e8fbeb29f586db71, type: 3}
+      propertyPath: _information2._dialog.Array.data[19]
+      value: "FRANCK :\n\r\rTu me brises le c\u0153ur mon fils..."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4376489920584273062, guid: 08c784a6098196a4e8fbeb29f586db71, type: 3}
+      propertyPath: _information2._dialog.Array.data[20]
+      value: "FRANCK : \nC'est cela pars ! "
+      objectReference: {fileID: 0}
+    - target: {fileID: 4376489920584273062, guid: 08c784a6098196a4e8fbeb29f586db71, type: 3}
+      propertyPath: _information2._dialog.Array.data[21]
+      value: "FRANCK :\nPars pour l'autre monde avec ta cr\xE9ation !"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4376489920584273062, guid: 08c784a6098196a4e8fbeb29f586db71, type: 3}
+      propertyPath: _information2._dialog.Array.data[22]
+      value: "SLIME : \n!!!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4376489920584273063, guid: 08c784a6098196a4e8fbeb29f586db71, type: 3}
+      propertyPath: m_RootOrder
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 4376489920584273063, guid: 08c784a6098196a4e8fbeb29f586db71, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 113.95886
+      objectReference: {fileID: 0}
+    - target: {fileID: 4376489920584273063, guid: 08c784a6098196a4e8fbeb29f586db71, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 125.97316
+      objectReference: {fileID: 0}
+    - target: {fileID: 4376489920584273063, guid: 08c784a6098196a4e8fbeb29f586db71, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 25.237501
+      objectReference: {fileID: 0}
+    - target: {fileID: 4376489920584273063, guid: 08c784a6098196a4e8fbeb29f586db71, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4376489920584273063, guid: 08c784a6098196a4e8fbeb29f586db71, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4376489920584273063, guid: 08c784a6098196a4e8fbeb29f586db71, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4376489920584273063, guid: 08c784a6098196a4e8fbeb29f586db71, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4376489920584273063, guid: 08c784a6098196a4e8fbeb29f586db71, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4376489920584273063, guid: 08c784a6098196a4e8fbeb29f586db71, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4376489920584273063, guid: 08c784a6098196a4e8fbeb29f586db71, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 08c784a6098196a4e8fbeb29f586db71, type: 3}
 --- !u!1001 &1854489842
 PrefabInstance:
   m_ObjectHideFlags: 0
