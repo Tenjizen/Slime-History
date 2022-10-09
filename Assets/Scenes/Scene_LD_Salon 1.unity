@@ -165,13 +165,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _information:
     _dialog:
-    - 'SLIME
+    - 'ALARME:
 
-      seul...'
-    - 'SLIME
+      !!!!!!!!!!!!!!!!!!!'
+    - 'SLIME:
 
-      Je me sens si seul...'
-    - "SLIME\r\nP\xE8re, pourquoi m'avoir rejet\xE9 ?"
+      Mince l''alarme !'
+    - "FRANCK:\nMes recherches ! Je sais que c'est toi SLIME ! Tu ne les auras pas
+      ! Tu ne sauras m\xEAme pas d\xE9chiffrer mon g\xE9nie alors rends moi \xE7a
+      !"
+    - 'SLIME:
+
+      Je dois m''enfuir rapidement !'
   _information2:
     _dialog: []
   _information3:
