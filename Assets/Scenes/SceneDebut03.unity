@@ -2409,6 +2409,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7717032796268117830, guid: 0d62f48713db69f4790a6ee87e6f2248, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7717032797276830544, guid: 0d62f48713db69f4790a6ee87e6f2248, type: 3}
       propertyPath: m_Name
       value: CanvasDialog
@@ -2859,6 +2863,22 @@ PrefabInstance:
     - target: {fileID: 4290199480500506790, guid: 77df3bc897bed50489a899acb9c9b105, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 8350211490115542689, guid: 77df3bc897bed50489a899acb9c9b105, type: 3}
+      propertyPath: m_Size.x
+      value: 0.24484631
+      objectReference: {fileID: 0}
+    - target: {fileID: 8350211490115542689, guid: 77df3bc897bed50489a899acb9c9b105, type: 3}
+      propertyPath: m_Size.y
+      value: 0.17650098
+      objectReference: {fileID: 0}
+    - target: {fileID: 8350211490115542689, guid: 77df3bc897bed50489a899acb9c9b105, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.0020202994
+      objectReference: {fileID: 0}
+    - target: {fileID: 8350211490115542689, guid: 77df3bc897bed50489a899acb9c9b105, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.00825049
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 77df3bc897bed50489a899acb9c9b105, type: 3}
