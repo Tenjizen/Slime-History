@@ -66,6 +66,8 @@ public class PlayerController : MonoBehaviour
     private int life = 3;
     [SerializeField] Image[] lifeHearts;
 
+    public Animator animator;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -95,10 +97,16 @@ public class PlayerController : MonoBehaviour
     void HandleInputs()
     {
         inputs.x = Input.GetAxisRaw("Horizontal");
+        animator.SetFloat("moveX", inputs.x);
         inputs.y = Input.GetAxisRaw("Vertical");
 
         inputJump = Input.GetKey(KeyCode.Space);
-
+        if (inputJump)
+        {
+            animator.SetBool("jumped", true);
+        }
+        if(isGrounded)
+            animator.SetBool("jumped", false);
         if (Input.GetKeyDown(KeyCode.Space))
             timeSinceJumpPressed = 0;
 
