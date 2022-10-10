@@ -8,4 +8,25 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MainMenu.unity
     guid: 8c24fa453c988814fba71920eea21e5d
+  - enabled: 1
+    path: Assets/Scenes/SceneDebut00.unity
+    guid: 52bfac2d4b923b34ca2d21d5fa9a6ded
+  - enabled: 1
+    path: Assets/Scenes/SceneDebut01.unity
+    guid: fb4cddb3acfa3cd4c968a057f55747f0
+  - enabled: 1
+    path: Assets/Scenes/Scene_LD_Salon 1.unity
+    guid: 81e4f3cee96d81c49a9f41265f20905b
+  - enabled: 1
+    path: Assets/Scenes/SceneDebut02.unity
+    guid: e3132aa90f23be741b20abfe0222004f
+  - enabled: 1
+    path: Assets/Scenes/Scene_LD_Cuisine.unity
+    guid: 8d17b59bacf145f41abadd112cae759d
+  - enabled: 1
+    path: Assets/Scenes/SceneDebut03.unity
+    guid: f47696008d169b041bd6264b9d26105c
+  - enabled: 1
+    path: Assets/Scenes/Scene_LD_Labo.unity
+    guid: 29952be399714b9419d5128be3b7a2ba
   m_configObjects: {}
