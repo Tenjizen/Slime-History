@@ -138,10 +138,6 @@ public class PlayerController : MonoBehaviour
             rb.gravityScale = 0;
             rb.velocity = new Vector2(rb.velocity.x, 0);
         }
-        else
-        {
-            rb.gravityScale = 1;
-        }
 
 
     }
