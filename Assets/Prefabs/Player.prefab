@@ -203,8 +203,8 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   jumpForce: 10.5
-  wallJumpForce: 10
-  wallJumpUpForce: 8
+  wallJumpForce: 20
+  wallJumpUpForce: 10
   timeMinBetweenJump: 0.5
   velocityFallMin: -20
   gravity: 2
