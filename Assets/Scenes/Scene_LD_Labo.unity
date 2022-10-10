@@ -930,7 +930,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7600378157843971430, guid: 2e16f33b2e3de0a47918cd29db6ced92, type: 3}
       propertyPath: code
-      value: 1870
+      value: 1830
       objectReference: {fileID: 0}
     - target: {fileID: 7600378157843971430, guid: 2e16f33b2e3de0a47918cd29db6ced92, type: 3}
       propertyPath: door
